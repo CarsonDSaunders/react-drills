@@ -2,25 +2,27 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      myList: ['Seth', 'Amber', 'Hunter', 'Carson', 'Kellen'],
+    }
+
+  }
+
+  render() {
+    return (
+      <ul>
+        <li><h2>{this.state.myList[0]}</h2></li>
+        <li><h2>{this.state.myList[1]}</h2></li>
+        <li><h2>{this.state.myList[2]}</h2></li>
+        <li><h2>{this.state.myList[3]}</h2></li>
+        <li><h2>{this.state.myList[4]}</h2></li>
+      </ul>
+    )
+  }
 }
 
 export default App;
