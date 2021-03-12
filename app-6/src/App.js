@@ -10,7 +10,6 @@ class App extends React.Component {
       input: '',
       taskList: [],
     }
-
     this.handleClick = this.handleClick.bind( this )
   }
 
