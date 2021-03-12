@@ -22,7 +22,6 @@ class App extends React.Component {
     let intList = this.state.taskList;
     intList.push(this.state.input);
     this.setState({taskList: intList});
-    this.setState({input: ''});
 
   }
 

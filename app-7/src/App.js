@@ -16,7 +16,6 @@ class App extends React.Component {
 
   handleClick(val) {
     this.setState({taskList: [...this.state.taskList, val]});
-
   }
 
   render() {
